@@ -117,7 +117,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .el-dialog__header {
   background-color: #ddfff5;
 }

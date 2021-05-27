@@ -5,7 +5,7 @@
         <el-menu mode="horizontal" :default-active="activePath" @select="handleSelect" router background-color="#B3C0D1">
           <el-menu-item index="/table">Music Manager</el-menu-item>
           <el-menu-item index="/content">User Manager</el-menu-item>
-          <el-menu-item index="/test">Test</el-menu-item>
+          <el-menu-item index="/page-config">Page Manager</el-menu-item>
         </el-menu>
       </el-header>
       <el-container>
@@ -43,8 +43,8 @@ export default {
         return '/table'
       } else if (currentPath.indexOf('/content') !== -1) {
         return '/content'
-      } else if (currentPath.indexOf('/test') !== -1) {
-        return '/test'
+      } else if (currentPath.indexOf('/page-config') !== -1) {
+        return '/page-config'
       }
       return '/table'
     }

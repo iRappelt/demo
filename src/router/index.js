@@ -5,6 +5,7 @@ import Content from '../components/Content'
 import Account from '../components/Account'
 import Home from '../components/Home'
 import AddAccount from '../components/AddAccount'
+import PageConfig from '../components/PageConfig'
 
 Vue.use(Router)
 
@@ -50,6 +51,11 @@ export default new Router({
       path: '/table',
       name: 'Table',
       component: Table
+    },
+    {
+      path: '/page-config',
+      name: 'Page-Config',
+      component: PageConfig
     }
   ],
   mode: 'history'
